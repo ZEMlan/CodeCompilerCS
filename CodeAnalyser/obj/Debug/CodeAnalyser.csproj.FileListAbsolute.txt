@@ -1,0 +1,7 @@
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\CodeAnalyser.exe.config
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\CodeAnalyser.exe
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\CodeAnalyser.pdb
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\CompilerDLL.dll
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.csproj.CopyComplete
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.exe
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.pdb

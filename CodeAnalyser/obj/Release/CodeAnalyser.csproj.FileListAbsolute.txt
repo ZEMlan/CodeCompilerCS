@@ -1,0 +1,8 @@
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Release\CodeAnalyser.exe.config
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Release\CodeAnalyser.exe
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Release\CodeAnalyser.pdb
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Release\CompilerDLL.dll
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.csproj.CopyComplete
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.exe
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.pdb
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.csprojAssemblyReference.cache
