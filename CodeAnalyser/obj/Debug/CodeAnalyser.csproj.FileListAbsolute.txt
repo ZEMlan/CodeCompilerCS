@@ -5,3 +5,6 @@ C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\Com
 C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.csproj.CopyComplete
 C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.exe
 C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.pdb
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\System.CodeDom.dll
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Debug\System.CodeDom.xml
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Debug\CodeAnalyser.csprojAssemblyReference.cache

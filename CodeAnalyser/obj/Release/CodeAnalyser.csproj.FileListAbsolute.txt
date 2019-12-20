@@ -6,3 +6,5 @@ C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\C
 C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.exe
 C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.pdb
 C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\obj\Release\CodeAnalyser.csprojAssemblyReference.cache
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Release\System.CodeDom.dll
+C:\Users\Евгения\CSProjects\repos\CodeAnalyser\CodeAnalyser\bin\Release\System.CodeDom.xml

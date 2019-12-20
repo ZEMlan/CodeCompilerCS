@@ -20,6 +20,7 @@ namespace SharpConsole
             {
                 public static void Main()
                 {
+                    Console.WriteLine(""Hello!!!!!"");
         ";
         const string footer = @"
                                 }
@@ -41,10 +42,21 @@ namespace SharpConsole
                     case "!run":
                         {
                             compiler.ExecuteScript(FormatSources(code));
-                            foreach (string er in compiler.errors)
-                                Console.WriteLine(er);
-                            foreach (string ou in compiler.output)
-                                Console.WriteLine(ou);
+                            //получение ошибок 
+                            var errors = compiler.errors;
+                            //получение выходных данных
+                            var outputs = compiler.output;
+                            //вывод
+                            if (errors.Count == 0)
+                            {
+                                foreach (var output in outputs)
+                                    Console.WriteLine(output);
+                            }
+                            else
+                            {
+                                foreach (var error in errors)
+                                    Console.WriteLine(error);
+                            }
                         }
                         break;
      
