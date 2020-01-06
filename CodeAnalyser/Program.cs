@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
 using System.Text;
 using CompilerDLL;
 
@@ -7,82 +9,48 @@ namespace SharpConsole
 {
     class Program
     {
-        const string header = @"
-        using System;
-        using System.IO;
-        using System.Net;
-        using System.Threading;
-        using System.Collections.Generic;
- 
-        namespace CScript
-        {
-            public class Script
-            {
-                public static void Main()
-                {
-                    Console.WriteLine(""Hello!!!!!"");
-        ";
-        const string footer = @"
-                                }
-                            }
-                        }";
+        const string PyExePath = "C:/Python37/python.exe";
+        const string PyCodePath = "C:/Python37/input.py";
 
         static void Main(string[] args)
         {
-            Console.Title = "SharpConsole";
+            Console.Title = "PythonConsole";
+            Compiler compiler = new Compiler(PyExePath, PyCodePath);
 
-            List<string> code = new List<string>();
-            var compiler = new Compiler();
+            List<string> input = new List<string>();
+            input.Add("#!/usr/local/bin/python\n# -*- coding: utf-8 -*-\n\n");
             while (true)
             {
-                Console.Write("csharp> ");
+                Console.Write("py> ");
                 string line = Console.ReadLine();
                 switch (line)
                 {
-                    case "!run":
+                    case "!r":
                         {
-                            compiler.ExecuteScript(FormatSources(code));
-                            //получение ошибок 
-                            var errors = compiler.errors;
-                            //получение выходных данных
-                            var outputs = compiler.output;
-                            //вывод
-                            if (errors.Count == 0)
-                            {
-                                foreach (var output in outputs)
-                                    Console.WriteLine(output);
-                            }
-                            else
-                            {
-                                foreach (var error in errors)
-                                    Console.WriteLine(error);
-                            }
+                            var code = FormatCode(input);
+                            compiler.WriteCode(code);
+                            compiler.Execute();
+                            Console.WriteLine(compiler.outputs);
+                            Console.WriteLine(compiler.errors);
                         }
                         break;
-     
+
                     default:
                         {
-                            code.Add(line);
+                            input.Add(line);
                         }
                         break;
                 }
 
-
-
             }
         }
 
-        private static string FormatSources(List<string> code)
+        static string FormatCode(List<string> lines)
         {
-            string program = header;
-            StringBuilder sb = new StringBuilder(program);
-
-            foreach (var sc in code)
-            {
-                sb.AppendLine(sc);
-            }
-            sb.AppendLine(footer);
-            return sb.ToString();
+            StringBuilder builder = new StringBuilder();
+            foreach (var line in lines)
+                builder.Append(line + "\n");
+            return builder.ToString();
         }
     }
 }
